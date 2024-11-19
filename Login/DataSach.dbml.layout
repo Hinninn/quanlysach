@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataSach">
+  <DataContextMoniker Name="/DataSachDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c82dc09b-b835-4856-9a38-1affa3f09753" absoluteBounds="0.75, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataSachDataContext/DocGia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53df19c2-fc10-4012-b782-c29495c35e68" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cb1976b-b330-43a6-9365-a321112dea1f" absoluteBounds="3.5, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataSachDataContext/LichSuMuonTraSach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85db3b81-dc3a-48a7-a2e2-a8af00caf088" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1981d277-41f6-4f78-85da-8fa88e9dbdcd" absoluteBounds="0.75, 4.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataSachDataContext/Sach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49f13a64-f02b-449f-887f-3f15d4604fdf" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.76044840494792); (3.5 : 1.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataSachDataContext/DocGia/DocGia_LichSuMuonTraSach" />
+      <nodes>
+        <classShapeMoniker Id="c82dc09b-b835-4856-9a38-1affa3f09753" />
+        <classShapeMoniker Id="8cb1976b-b330-43a6-9365-a321112dea1f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.82774983723958); (4.5 : 5.82774983723958); (4.5 : 2.64589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataSachDataContext/Sach/Sach_LichSuMuonTraSach" />
+      <nodes>
+        <classShapeMoniker Id="1981d277-41f6-4f78-85da-8fa88e9dbdcd" />
+        <classShapeMoniker Id="8cb1976b-b330-43a6-9365-a321112dea1f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
